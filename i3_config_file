@@ -1,5 +1,5 @@
 # set wallpaper
-exec_always --no-startup-id feh --bg-center ~/.dots/bg/fumikiri.jpg
+exec_always --no-startup-id feh --bg-fill ~/.dots/bg/fumikiri.jpg
 
 # set mod key
 set $mod Mod4
