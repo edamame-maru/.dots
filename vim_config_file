@@ -4,6 +4,7 @@ set cindent
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set hlsearch
+set noesckeys
 syntax enable
 color desert
-set hlsearch
