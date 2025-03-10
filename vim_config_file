@@ -1,4 +1,8 @@
-set nu
+set number
 set nowrap
 set cindent
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 syntax enable
+color desert
