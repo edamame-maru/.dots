@@ -6,3 +6,4 @@ set shiftwidth=4
 set expandtab
 syntax enable
 color desert
+set hlsearch
