@@ -31,8 +31,9 @@ disk "/" {
         format = "%avail"
 }
 
-load {
-        format = "%1min"
+cpu_temperature 0 {
+	format = "T: %degrees" 
+	path = "/sys/devices/platform/coretemp.0/temp1_input"
 }
 
 memory {
@@ -42,5 +43,5 @@ memory {
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "%Y-%m-%d %H:%M"
 }
