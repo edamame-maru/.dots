@@ -12,10 +12,9 @@ ln -s ~/.dots/xinit_config_file ~/.xinitrc
 ln -s ~/.dots/vim_config_file ~/.vimrc
 
 # create home directories
-mkdir tmp
-mkdir bin
-mkdir src
+mkdir ~/tmp
+mkdir ~/bin
+mkdir ~/src
 
 # create todo.txt
-touch todo.txt
-printf "add /home/so1maru/bin to PATH in ~/.bash_profile: https://wiki.archlinux.org/title/Environment_variables#Per_user" >> todo.txt
+printf "add /home/so1maru/bin to PATH in ~/.bash_profile: https://wiki.archlinux.org/title/Environment_variables#Per_user" >> ~/TODO.txt
