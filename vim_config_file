@@ -1,10 +1,48 @@
 set number
 set nowrap
-set cindent
+
+" see :h tabstop
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+
+set cindent
+
+" use :noh to clear
 set hlsearch
+
+" stop O delay
 set noesckeys
+
+set guioptions-=T
+set guioptions-=m
+set guioptions-=r
+set guifont=Fira\ Code\ 16
+
+" paste shortcut
+nnoremap <C-S-v> "+p
+inoremap <C-S-v> "+p
+
 syntax enable
-color desert
+
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+\| PlugInstall --sync | source $MYVIMRC
+\| endif
+
+call plug#begin()
+
+Plug 'dracula/vim'
+
+call plug#end()
+
+" colorscheme
+let g:solarized_termcolors=256
+set background=dark
+colorscheme dracula 
